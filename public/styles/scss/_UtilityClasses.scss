@@ -1,0 +1,49 @@
+@import "Variables";
+@import "Functions";
+/////////////////////////
+img {
+  width: 100%;
+}
+
+* {
+  @include fontFamily;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none !important;
+
+}
+ul{
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-align: justify;
+  font-weight: lighter;
+  line-height: 2;
+
+}
+
+p {
+  margin: 0.5rem 0;
+
+  line-height: 2;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 2;
+
+}
+
+a:hover {
+
+}
+@for $size from 1 through 9{
+  .fw-#{$size}{
+    font-weight: $size * 100;
+  }
+}

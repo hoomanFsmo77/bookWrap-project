@@ -1,0 +1,164 @@
+@import "Functions";
+@import "Variables";
+@import "UtilityClasses";
+//////////////////////////////////
+@include q(991px) {
+  nav{
+    form button{
+      width: 100%;
+    }
+  }
+  .navbar-nav li{
+    .list-group{
+      width: 100% !important;
+      i{
+        @include transform(rotate(90deg));
+      }
+    }
+    &:nth-child(3) .dropdown-menu .dropdown-menu{
+      display: none;
+      width: 100%!important;
+    }
+    .sub-menu-div{
+      position: static!important;
+    }
+  }
+  .dropdown-menu{
+    @include transform(translateY(0));
+    opacity: 1;
+    border: none!important;
+    display: flex;
+
+    .services-nav{
+      width: 100% !important;
+    }
+    > .row{
+      width: 100% !important;
+    }
+
+  }
+  nav .offcanvas-body li:not(.list-group-item):first-child .dropdown-menu{
+    width: auto;
+  }
+  nav .offcanvas-body li:not(.list-group-item){
+    margin: 0!important;
+    &:last-child{
+      .dropdown-menu{
+        width: auto!important;
+      }
+
+    }
+  }
+  nav .navbar-nav li:nth-child(2) .dropdown-menu{
+    left: 0;
+    width: 100%;
+  }
+  ////////////// partner section
+  #partners{
+    svg{
+      width: 80px!important;
+    }
+  }
+  //////////// samples
+  #samples{
+    .sample-form{
+      width: 100% !important;
+    }
+    .article{
+      p:nth-child(2){
+        font-size: 1rem!important;
+      }
+      div p{
+        font-size: 0.9rem!important;
+      }
+    }
+    .bi.bi-envelope-fill,.bi.bi-person-fill,.bi.bi-key-fill{
+      left: 34px!important;
+    }
+    .title{
+      left: 75px!important;
+    }
+    input{
+      padding-left: 45px!important;
+    }
+  }
+  //////////////////////// customer ////////////////////
+  #customer{
+    p{
+      width: 100% !important;
+    }
+    .image-card{
+      img{
+        border-top-right-radius: 14px;
+        border-top-left-radius: 14px;
+        border-bottom-left-radius: 0!important;
+        border-bottom-right-radius: 0!important;
+      }
+    }
+    .slider-items{
+      border-top-right-radius: 0!important;
+      border-top-left-radius:0!important;
+      border-bottom-left-radius: 14px;
+      border-bottom-right-radius: 14px;
+    }
+  }
+  .bi-chevron-left{
+    top: 129% !important;
+  }
+  #customer-comments{
+    .comment-header{
+      width: 90% !important;
+    }
+  }
+  .user-register-modal{
+    left: 27% !important;
+  }
+  #subscription .quote_slider .circle-filler{
+    top: -32% !important;
+  }
+  .faq-collapse{
+    width: 100% !important;
+  }
+}
+
+@include q(768px){
+  #customer{
+    .bi-chevron-left{
+      top: 142% !important;
+    }
+  }
+  .user-register-modal{
+    left: 17% !important;
+  }
+  #subscription_price{
+    h1{
+      font-size: 3rem!important;
+    }
+  }
+
+}
+@include q(500px){
+  #customer{
+    .bi-chevron-left{
+      top: 163% !important;
+    }
+  }
+  .user-register-modal{
+    width: 100vw!important;
+    left: 0!important;
+  }
+  #subscription .quote_slider .circle-filler{
+    top: -43%!important;
+  }
+  #subscription_price{
+    h1{
+      font-size: 2rem!important;
+    }
+  }
+  footer .container .row:nth-child(2) p{
+    font-size: 0.8rem;
+  }
+
+}
+
+
